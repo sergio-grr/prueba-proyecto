@@ -1,0 +1,54 @@
+body {
+  background-color: #222; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  font-family: 'Arial', sans-serif; /* Tipografía legible */
+  text-align: center; /* Alinear el texto en el centro */
+}
+
+
+#titulodeljuego {
+  max-width: 80%; /* Limitar el ancho del título */
+  margin: 20px auto 0; /* Agregar espacio superior y centrar */
+}
+
+
+
+
+
+#fondoinicio {
+  background-image: url(Imagenes/Fondo.jpeg);
+  background-size: cover; /* Cubrir todo el contenedor */
+  background-position: center; /* Centrar la imagen */
+  height: 500px; /* Ajustar la altura */
+  padding: 20px;
+}
+
+
+#Empezar:hover {
+  background-color: #16f58d; /* Cambiar el color del botón al hover */
+}
+
+
+
+#TituloElegirPersonaje {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #e7e6e2;
+  background-color: #3b4c7a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+ 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

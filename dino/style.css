@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #layer1, #layer2, #layer3, #layer4, #player, #rival1, #rival2, #smokeExplosion, #fireExplosion, #reset {
+    display: none;
+  }
+
+  body{
+    background-image: url(../dino/assets/fondo.jpeg);
+    background-size: cover;
+  }
+  
+
+  #canvas1 {
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgb(111, 111, 245);
+    z-index: 1; 
+  }
+  
+  #controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #reset {
+    background-color: #f04646; 
+    color: white;
+    font-size: 24px;
+    padding: 10px 50px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transform: translateX(-50%);
+    z-index: 2;
+    position: fixed;
+    top: 20%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    align-items: center;
+     
+  }
+
+
+  #controls button {
+    margin: 0 10px;
+    font-size: 24px;
+    padding: 10px 50px;
+    background-color: #46b2f0; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  #controls button:hover {
+    background-color:#46b2f0; 
+  }
+  
+  a.button-home {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+a.button-home button {
+    background-color: green;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+a.button-home button svg {
+    fill: white;
+}
+
+  /* Ocultar los botones en pantallas más grandes */
+  #controls button {
+    display: none;
+    
+  }
+  
+  /* Mostrar los botones solo en pantallas más pequeñas (móviles) */
+  @media only screen and (max-width: 768px) {
+    #controls button {
+      display: inline-block;
+    }
+  }
+  
+  
+  
+  
+  /* Media query para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    #header {
+      top: 10px;
+    }
+  
+    #canvas1 {
+      transform: translate(-50%, -30%);
+    }
+  
+    #controls {
+      bottom: 10px;
+    }
+  }
+  

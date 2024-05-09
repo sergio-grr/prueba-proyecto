@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La leyenda del tiempo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+    <a href="../index.html" class="button-home">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+        </button>
+    </a>
+    
+    <canvas id="canvas1"></canvas>
+
+    <!-- characters -->
+    <img id="player" src="assets/moto_layer/moto-player.png">
+    <img id="rival2" src="assets/moto_layer/enemi_moto_1.png">
+    <img id="rival1" src="assets/moto_layer/enemi_moto_3.png">
+
+    <!-- particles -->
+    <img id="smokeExplosion" src="assets/moto_layer/smokeExplosion.png">
+    <img id="fireExplosion" src="assets/moto_layer/fireExplosion.png">
+
+    <!-- environment -->
+    <img id="layer1" src="assets/moto_layer/layer-1.jpeg">
+    <img id="layer2" src="assets/moto_layer/layer-2.png">
+    <img id="layer3" src="assets/moto_layer/layer-3.png">
+    <img id="layer4" src="assets/moto_layer/layer-4.png">
+
+    <!-- buttons -->
+    <div class="row" id="controls">
+        <button class="col-6" id="upButton">▲</button>
+        <button class="col-6" id="downButton">▼</button>
+    </div>
+    
+    <div class="button-container">
+        <button id="reset">
+            <p>Reiniciar</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+            </svg> 
+        </button>     
+    </div>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
